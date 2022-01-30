@@ -1,0 +1,19 @@
+[package]
+name = "pcap_rparser"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pnet = "0.28"
+pnet_macros = "0.28" # currently not using
+pnet_macros_support = "0.28" # currently not using
+clap = { version = "3.0.5", features = ["derive"] }
+pcap-parser = {version="0.13", features=["data"] }
+nom = "7.1"
+nom-derive = "0.10"
+byteorder = "1.4"
+rusticata-macros = "4.0"
+hex_fmt = "0.3"          #TODO: Dont think i need this.
+eui48 = "1.1.0"
